@@ -2,4 +2,7 @@
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
-export default defineConfig({});
+  // MY CONSTANTS
+export default defineConfig({
+  site: "https://stillejiarou.neocities.org"
+});
