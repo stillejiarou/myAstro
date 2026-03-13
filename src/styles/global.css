@@ -1,0 +1,78 @@
+/* variables */
+
+:root {
+  --text-color: rgb(25, 25, 112);
+  --accent: rgb(70, 130, 180);
+  --background: rgb(240, 248, 255);
+  --surface: #ffffff;
+
+  --opacity-subtle: 0.35;
+
+  --font-family: 'Courier New', Courier, monospace;
+
+  --xs: 4px;
+  --sm: 8px;
+  --md: 16px;
+  --lg: 32px;
+  --xl: 48px;
+
+  --main-width: 900px;
+  --reading-width: 65ch;
+
+  --font-weight-bold: 700;
+  --line-height-h: 1;
+  --line-height-p: 1.6;
+
+  --border: 1px solid var(--text-color);
+  --box-shadow: 3px 3px 3px var(--accent), -3px -3px 3px var(--accent);
+  --border-radius: 3px;
+}
+
+/* dark mode */
+.dark {
+  --text-color: #e6e6fa;
+  --accent: #87cefa;
+  --background: #0b0c10;
+  --surface: #1f2833;
+
+  --border: 1px solid var(--text-color);
+  --box-shadow: 3px 3px 3px var(--accent), -3px -3px 3px var(--accent);
+}
+
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: var(--line-height-p);
+  color: var(--text-color);
+
+  cursor: default;
+  scroll-behavior: smooth;
+  user-select: text;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* extra */
+
+::selection {
+  color: var(--surface);
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}

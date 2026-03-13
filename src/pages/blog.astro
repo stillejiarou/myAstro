@@ -1,5 +1,10 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
+import "../styles/global.css";
+
+const pageTitle = "Blog";
 ---
 
 <html lang="en">
@@ -12,13 +17,20 @@
     <title>Blog</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Header />
     <h1>My Astro Learning Blog</h1>
     <p>
       This is where the tutorial wants me to post about my journey learning
       Astro but I'm writing that inside the README. md instead.
     </p>
+    <p>
+      Now that I've gotten a bit further into the tutorial... I might move the
+      learning log here actually (&gt;.&lt;) .
+    </p>
+    <ul>
+      <li><a href="/posts/p000/">Post 0</a></li>
+      <li><a href="/posts/p001/">Post 1</a></li>
+    </ul>
+    <Footer />
   </body>
 </html>
